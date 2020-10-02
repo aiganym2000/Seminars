@@ -8,11 +8,9 @@ public class Main {
         int[] array = new int[]{2, 3, 78, 41, 11, 65};
         boolean is = false;
         double num = 100.0D;
-        int[] var5 = array;
-        int var6 = array.length;
 
-        for(int var7 = 0; var7 < var6; ++var7) {
-            int i = var5[var7];
+        for(int i = 0; i < array.length; i++) {
+            int i = array[i];
             if ((double)i == num) {
                 is = true;
             }
