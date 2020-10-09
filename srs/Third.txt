@@ -1,0 +1,82 @@
+public class Animal{
+	public string food;
+	public String location;
+	
+	public void makeNoise() {
+		System.out.println('Животное издаёт звуки');
+	}	
+	
+	public void eat() {
+		System.out.println('Животное ест');
+	}
+
+	public void function sleep() {
+		System.out.println('Животное спит');
+	}	
+}
+
+
+public class Dog implements Animal {
+	public String animal = 'Собака';
+	public food = 'Косточка';
+	public location = 'Задний двор';
+	public void makeNoise() {
+		System.out.println('Собака лает');
+	}	
+	
+	public void eat() {
+		System.out.println('Собака ест');
+	}
+
+	public void sleep() {
+		System.out.println('Собака спит');
+	}
+}
+
+public class Cat implements Animal {
+	public String animal = 'Кошка';
+	public food = 'Рыба';
+	public location = 'Дом';
+	public void makeNoise() {
+		System.out.println('Кошка мяукает');
+	}	
+	
+	public void eat() {
+		System.out.println('Кошка ест');
+	}
+
+	public void sleep() {
+		System.out.println('Кошка спит');
+	}
+}
+
+public class Horse implements Animal {
+	public String animal = 'Лошадь';
+	public food = 'Яблоко';
+	public location = 'Поле';
+	public void makeNoise() {
+		System.out.println('Лошадь ржёт');
+	}	
+	
+	public void eat() {
+		System.out.println('Лошадь ест');
+	}
+
+	public void sleep() {
+		System.out.println('Лошадь спит');
+	}
+}
+
+public class Vet {
+	public void treatAnimal(Animal animal){
+		System.out.println(animal.food);
+		System.out.println(animal.location);
+	}
+
+	public void main() {
+		Animal[] arr = [];
+		for (int i = 0; i < 3; i++) {
+            		treatAnimal();
+        	}
+	}
+}

@@ -1,0 +1,48 @@
+
+ public class Phone {
+    public int number;
+    public String model;
+    public int weight;
+
+    
+    public void receiveCall(String name) {
+      System.out.println("Звонит " + name);
+    }
+    public void getNumber() {
+      return number;
+    }
+    public Phone(int number, String model, int weight) {
+	this.number = number;
+	this.model = model;
+	this.weight = weight;
+    }
+    public Phone(int number, String model) {
+this.number = number;
+	this.model = model;
+    }
+    public Phone() {}
+ } 
+class Main{
+ public static void main(String [] args) {
+     Phone first = new Phone();
+     Phone second = new Phone();
+     Phone third = new Phone();
+
+     first.number = 8 700 569 5566;
+     first.model = 'Samsung';
+     first.weight = 250;
+
+	second.number = 8 956 256 4478;
+     second.model = 'Iphone';
+     second.weight = 350;
+
+	third.number = 8 956 256 4478;
+     third.model = 'Xiaomi';
+     third.weight = 130;
+
+     System.out.println(first.number + " " + first.model + " " + first.weight);
+     System.out.println(second.number + " " + second.model + " " + second.weight);
+     System.out.println(third.number + " " + third.model + " " + third.weight);
+     first.receiveCall("Aqu");
+ }
+}

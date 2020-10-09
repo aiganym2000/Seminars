@@ -1,0 +1,25 @@
+public class Student {
+	String firstName, lastName, group;
+	double averageMark;
+	public getScholarship(){
+	if(averageMark==5){
+		return 100;
+	} else {
+		return 80;
+	}
+	}
+}
+
+public class Aspirant implements Student {
+	public getScholarship(){
+	if(averageMark==5){
+		return 200;
+	} else {
+		return 180;
+	}
+	}
+Student[] arr = [, 'Sabyrjhan', 'Maksat']; 
+for (int i=0; i<3; i++) {
+            getScholarship();
+        }
+}

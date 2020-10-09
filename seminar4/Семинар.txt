@@ -1,0 +1,33 @@
+/*
+Это 
+мой 
+многострочный 
+комментарий.
+По идее, здесь можно хранить код, который пока не нужен, но скоро может пригодиться.
+Или оставлять комментарии для следующего программиста, чтобы он смог быстро соориентироваться в чужом коде. 
+ */
+//А это мой однострочный комментарий
+//Способ обмена значениями без дополнительной переменной:
+
+public class Number {
+    public static void main(String[] args) {
+        int a = 12;
+        int b = 77;
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+
+
+//Класс с счётчиком
+public class Phone {
+    public String number;
+    public String country;
+    static int count = 0;
+    public function phone(){
+        count++;
+    }
+}
