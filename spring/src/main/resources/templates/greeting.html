@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>
+    <form method="post">
+        <input type="text" name="text" placeholder="text">
+        <input type="text" name="tag" placeholder="tag">
+        <button type="submit">ok</button>
+    </form>
+</div>
+<!--<p th:text="'Hello, ' + ${name} + '!'" />-->
+{{#messages}}
+<div>
+    <b>{{id}}</b>
+    <span>{{text}}</span>
+    <i>{{tag}}</i>
+</div>
+{{/messages}}
+</body>
+</html>
